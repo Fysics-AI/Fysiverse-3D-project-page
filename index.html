@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fysiverse-3D: Simulation-Ready Scene Generation from a Single Image (in development)</title>
+    <title>Fysiverse-3D-SimReady: Agentic Physical Simulation for Pragmatic 3D World Reconstruction</title>
     <link rel="stylesheet" href="./styles.css?v=20260706_source_link_readme" />
     <script type="importmap">
       {
@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand-link" href="#top">Fysiverse-3D</a>
+      <a class="brand-link" href="#top">Fysiverse-3D-SimReady</a>
       <nav aria-label="Project sections">
         <a href="#viewer">Playground</a>
         <a href="#comparisons">Comparisons</a>
@@ -30,10 +30,16 @@
     <main id="top">
       <section class="project-title-section">
         <div class="container">
-          <h1>Fysiverse-3D: Simulation-Ready Scene Generation from a Single Image <span class="title-note">(in development)</span></h1>
-          <p class="release-note">We will release the technical report and code by the end of July. Stay tuned.</p>
-          <p class="source-link-row">
-            <a href="https://github.com/Fysics-AI/Fysiverse-3D-SimReady" target="_blank" rel="noreferrer">Source code homepage</a>
+          <h1>Fysiverse-3D-SimReady: Agentic Physical Simulation for Pragmatic 3D World Reconstruction</h1>
+          <div class="hero-actions" aria-label="Project links">
+            <span class="hero-button hero-button-disabled" aria-disabled="true">Paper (Coming soon)</span>
+            <a class="hero-button hero-button-primary" href="https://github.com/Fysics-AI/Fysiverse-3D-SimReady" target="_blank" rel="noreferrer">Code</a>
+          </div>
+          <figure class="framework-figure">
+            <img src="./assets/framework.png" alt="Fysiverse-3D-SimReady framework overview" />
+          </figure>
+          <p class="project-abstract">
+            Agentic recognition requires visual perception to move beyond static scene understanding and produce structured scene representations that support the perception--reasoning--action loop. Existing single-image 3D generation methods, however, mainly produce visually plausible object assets rather than simulation-ready scene states. When independently generated meshes are composed in a shared space, they may fail to align with the input camera, violate gravity, interpenetrate nearby objects, or become unstable under physics simulation. We present Fysiverse-3D-SimReady, a grounded refinement framework for reconstructing simulation-ready multi-object scenes from a single RGB image with instance and ground prompts. The method places generated object meshes into a shared gravity-aligned scene, refines their camera-space poses through differentiable rendering, and corrects scene-level supports and contacts for stable physical execution. The scene is then used by an agentic simulation workflow, which converts a scene-specific task goal into an executable physics rollout rendered from the original camera view. Experiments show that Fysiverse-3D-SimReady improves input-view alignment, contact plausibility, and physical stability over existing single-image reconstruction and scene generation baselines, while enabling goal-conditioned physical interactions from a single image.
           </p>
         </div>
       </section>
@@ -45,7 +51,7 @@
             <p class="play-instruction">Choose a scene, move objects around, switch physics on or off, and load a robot or character.</p>
             <p class="physics-note">Physics runs directly in the browser with Rapier. Since collisions are computed from simplified convex meshes, some object jitter is expected.</p>
           </div>
-          <div class="tabs" id="showcase-tabs" role="tablist" aria-label="Fysiverse-3D scenes"></div>
+          <div class="tabs" id="showcase-tabs" role="tablist" aria-label="Fysiverse-3D-SimReady scenes"></div>
           <div class="viewer-stage">
             <main id="sim-root" class="sim-root embedded-sim-root">
               <div class="toolbar collapsible-panel" aria-label="Simulation controls" data-collapsible-panel>
@@ -62,7 +68,7 @@
                   data-expand-label="Show simulation controls"
                 >^</button>
                 <div class="toolbar-content panel-body">
-                  <div class="brand">Fysiverse-3D</div>
+                  <div class="brand">Fysiverse-3D-SimReady</div>
                   <button id="reset-button" type="button">Reset</button>
                   <button id="physics-button" type="button" aria-pressed="false">Physics Off</button>
                   <button id="debug-button" type="button" aria-pressed="false">Colliders Off</button>
@@ -136,7 +142,7 @@
             <p class="comparison-note">
               SimFoundry takes videos as input. All cases shown here come from the
               <a href="https://research.nvidia.com/labs/gear/simfoundry/" target="_blank" rel="noreferrer">SimFoundry homepage</a>;
-              Fysiverse-3D uses a single frame from each video.
+              Fysiverse-3D-SimReady uses a single frame from each video.
             </p>
           </div>
           <div class="tabs" id="simfoundry-tabs" role="tablist" aria-label="SimFoundry comparison cases"></div>
@@ -149,7 +155,7 @@
             </figure>
             <div class="viewer-card">
               <div class="card-title">
-                <span>Fysiverse-3D</span>
+                <span>Fysiverse-3D-SimReady</span>
               </div>
               <div class="comparison-viewer-shell" id="simfoundry-ours"></div>
             </div>
@@ -169,11 +175,11 @@
           <div class="section-heading">
             <h2>More Cases</h2>
           </div>
-          <div class="tabs" id="reconstructed-tabs" role="tablist" aria-label="Additional Fysiverse-3D cases"></div>
+          <div class="tabs" id="reconstructed-tabs" role="tablist" aria-label="Additional Fysiverse-3D-SimReady cases"></div>
           <div class="reconstructed-grid">
             <div class="viewer-card reconstructed-card">
               <div class="card-title">
-                <span>Fysiverse-3D</span>
+                <span>Fysiverse-3D-SimReady</span>
               </div>
               <div class="comparison-viewer-shell reconstructed-viewer-shell">
                 <div id="reconstructed-viewer" class="reconstructed-viewer-root"></div>
