@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fysiverse-3D-SimReady: Agentic Physical Simulation for Pragmatic 3D World Reconstruction</title>
-    <link rel="stylesheet" href="./styles.css?v=20260706_source_link_readme" />
+    <link rel="stylesheet" href="./styles.css?v=20260903_simready_home" />
     <script type="importmap">
       {
         "imports": {
@@ -36,7 +36,7 @@
             <a class="hero-button hero-button-primary" href="https://github.com/Fysics-AI/Fysiverse-3D-SimReady" target="_blank" rel="noreferrer">Code</a>
           </div>
           <figure class="framework-figure">
-            <img src="./assets/framework.png" alt="Fysiverse-3D-SimReady framework overview" />
+            <img src="./assets/framework.png?v=20260903_crop" alt="Fysiverse-3D-SimReady framework overview" />
           </figure>
           <p class="project-abstract">
             Agentic recognition requires visual perception to move beyond static scene understanding and produce structured scene representations that support the perception--reasoning--action loop. Existing single-image 3D generation methods, however, mainly produce visually plausible object assets rather than simulation-ready scene states. When independently generated meshes are composed in a shared space, they may fail to align with the input camera, violate gravity, interpenetrate nearby objects, or become unstable under physics simulation. We present Fysiverse-3D-SimReady, a grounded refinement framework for reconstructing simulation-ready multi-object scenes from a single RGB image with instance and ground prompts. The method places generated object meshes into a shared gravity-aligned scene, refines their camera-space poses through differentiable rendering, and corrects scene-level supports and contacts for stable physical execution. The scene is then used by an agentic simulation workflow, which converts a scene-specific task goal into an executable physics rollout rendered from the original camera view. Experiments show that Fysiverse-3D-SimReady improves input-view alignment, contact plausibility, and physical stability over existing single-image reconstruction and scene generation baselines, while enabling goal-conditioned physical interactions from a single image.
