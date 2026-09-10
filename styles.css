@@ -217,6 +217,52 @@ h1 {
   text-align: left;
 }
 
+.license-section {
+  padding: 46px 0 64px;
+  background: #f5f7f9;
+}
+
+.license-card {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 24px 28px;
+  border: 1px solid rgba(24, 33, 47, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 34px rgba(24, 33, 47, 0.08);
+  text-align: center;
+}
+
+.license-card h2 {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.license-card p {
+  max-width: 620px;
+  margin: 0 auto 10px;
+  color: #4a5665;
+  font-size: 15px;
+  line-height: 1.58;
+}
+
+.license-card a {
+  color: #325300;
+  font-weight: 720;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.license-card a:hover {
+  color: #1f3b00;
+}
+
+.license-card .license-copyright {
+  margin-bottom: 0;
+  color: #657284;
+  font-size: 14px;
+}
+
 h2 {
   margin-bottom: 0;
   font-size: clamp(28px, 3.2vw, 46px);
