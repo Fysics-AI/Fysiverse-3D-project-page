@@ -183,6 +183,16 @@ h1 {
   background: #68a500;
 }
 
+.hero-button-secondary {
+  background: #ffffff;
+  color: #18212f;
+}
+
+.hero-button-secondary:hover {
+  border-color: rgba(24, 33, 47, 0.26);
+  background: #f8fafb;
+}
+
 .hero-button-disabled {
   background: #ffffff;
   color: #657284;
